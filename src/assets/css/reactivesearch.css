@@ -1,0 +1,23 @@
+.custome-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+}
+.custome-select > label {
+    position: relative;
+    padding: 3px 7px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px #5629b6 solid;
+    width: auto !important;
+    white-space: normal !important;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.custome-select > span {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}

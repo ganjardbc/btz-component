@@ -1,0 +1,39 @@
+.bubble_red {
+    composes: bubble from './bubble.css';
+    composes: color_red from './bubbleColor.css';
+}
+
+.bubble_orange {
+    composes: bubble from './bubble.css';
+    composes: color_orange from './bubbleColor.css';
+}
+
+.bubble_green {
+    composes: bubble from './bubble.css';
+    composes: color_green from './bubbleColor.css';
+}
+
+.bubble_blue {
+    composes: bubble from './bubble.css';
+    composes: color_blue from './bubbleColor.css';
+}
+
+.bubble_grey {
+    composes: bubble from './bubble.css';
+    composes: color_grey from './bubbleColor.css';
+}
+
+.container {
+    position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 0 10px 0 rgb(154 161 171 / 15%);
+}
+
+.image {
+    width: 100%;
+	height: 100%;
+}

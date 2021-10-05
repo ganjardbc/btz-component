@@ -1,0 +1,24 @@
+.color_red {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.color_orange {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.color_green {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.color_blue {
+    background-color: #529ecc;
+    color: #fff;
+}
+
+.color_grey {
+    background-color: #f0f0f0;
+    color: #999;
+}
