@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { LiveTextComponent, MoveableListComponent } from 'btz-component'
+import { LiveTextComponent, MoveableListComponent, TooltipComponent, BeautifulCardComponent } from 'btz-component'
 import 'btz-component/dist/index.css'
 
 const App = () => {
     return (
-        <div style={{padding: 20}}>
-            <h2>Live Text</h2>
+        <div style={{padding: 20, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap'}}>
             <div style={{width: 400, height: 400}}>
+                <h2>Live Text</h2>
                 <LiveTextComponent 
                     image={'https://lelogama.go-jek.com/prime/upload/image/come-be-a-gojek-driver-partner.svg'} 
                     bubble={[
@@ -22,8 +22,8 @@ const App = () => {
                 />
             </div>
 
-            <h2>Moveable List</h2>
             <div style={{width: 400}}>
+                <h2>Moveable List</h2>
                 <MoveableListComponent data={[
                     {
                         id: 1,
@@ -58,6 +58,30 @@ const App = () => {
                         content: 'AS IS AS',
                     },
                 ]} />
+            </div>
+
+            <div style={{ width: 400, height: 200 }}>
+                <h2>Tooltip</h2>
+                <button 
+				    data-scroll-hide="true"
+				    data-tip=""
+				    data-for="custom-tooltip">
+				    Open Tooltip
+				</button>
+                <TooltipComponent 
+                    clickable={true}
+					border={true}
+					type="light"
+					place="bottom" 
+					id="custom-tooltip"
+                    content={(
+                        <h1>CUSTOM TOOLTIP</h1>
+                    )} />
+            </div>
+
+            <div style={{ width: 700 }}>
+                <h2>Beautiful Card</h2>
+                <BeautifulCardComponent />
             </div>
         </div>
     )
