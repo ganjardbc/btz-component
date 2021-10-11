@@ -6,13 +6,15 @@ import BeautifulCardComponent from './components/BeautifulCardComponent'
 import CoolPopupComponent from './components/CoolPopupComponent'
 import CalendarHeatMapComponent from './components/CalendarHeatMapComponent'
 import FlippingCardComponent from './components/FlippingCardComponent'
+import ImageLoaderComponent from './components/ImageLoaderComponent'
+import SweetAlertComponent from './components/SweetAlertComponent'
 import './index.css'
 
 class App extends Component {
     constructor (props) {
     	super(props)
     	this.state = {
-            activeIndex: 6,
+            activeIndex: 8,
             navbar: [
                 {title: 'Live Text'},
                 {title: 'Moveable List'},
@@ -21,6 +23,8 @@ class App extends Component {
                 {title: 'Cool Popup'},
                 {title: 'Calendar Heatmap'},
                 {title: 'Flipping Card'},
+                {title: 'Image Loader'},
+                {title: 'Sweet Alert'},
             ]
         }
     }
@@ -52,6 +56,8 @@ class App extends Component {
                     {activeIndex === 4 && ( <CoolPopupComponent /> )}
                     {activeIndex === 5 && ( <CalendarHeatMapComponent /> )}
                     {activeIndex === 6 && ( <FlippingCardComponent /> )}
+                    {activeIndex === 7 && ( <ImageLoaderComponent /> )}
+                    {activeIndex === 8 && ( <SweetAlertComponent /> )}
                 </div>
             </div>
         )

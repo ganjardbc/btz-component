@@ -1,0 +1,89 @@
+.app_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.34);
+    z-index: 1000;
+    overflow-y: auto;
+    -webkit-transition: all 0.35s cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition: all 0.35s cubic-bezier(0, 1, 0.5, 1);
+    -ms-transition: all 0.35s cubic-bezier(0, 1, 0.5, 1);
+    -o-transition: all 0.35s cubic-bezier(0, 1, 0.5, 1);
+    transition: all 0.35s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.app_post_top {
+    position: relative;
+    top: 50%;
+    left: 0;
+	-webkit-transform: translate(0, -50%);
+	   -moz-transform: translate(0, -50%);
+		    -ms-transform: translate(0, -50%);
+		     -o-transform: translate(0, -50%);
+		        transform: translate(0, -50%);
+}
+
+.app_popup_content {
+    position: relative;
+    margin: auto;
+    width: 450px;
+    background: linear-gradient(0deg,#e74c3c 10%,#e84393);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.app_popup_label {
+    position: relative;
+    top: 50%;
+    left: 0;
+	-webkit-transform: translate(0, -50%);
+	   -moz-transform: translate(0, -50%);
+		    -ms-transform: translate(0, -50%);
+		     -o-transform: translate(0, -50%);
+		        transform: translate(0, -50%);
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.app_button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 13pt;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent !important;
+    color: #fff;
+}
+
+.app_button_ok {
+    position: relative;
+    padding: 0 14px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 10pt;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff!important;
+    color: #555;
+    border: 0;
+}
+
+.app_button_cancel {
+    position: relative;
+    padding: 0 14px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 10pt;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent !important;
+    color: #fff;
+    border: 0;
+}

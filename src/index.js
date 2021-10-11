@@ -6,6 +6,8 @@ import BeautifulCard from './components/BeautifulCard'
 import CoolPopup from './components/CoolPopup'
 import FlippingCard from './components/FlippingCard'
 import CalendarHeatMap from './components/CalendarHeatMap'
+import ImageLoader from './components/ImageLoader'
+import SweetAlert from './components/SweetAlert'
 
 export const LiveTextComponent = ({ image = '', bubble = [] }) => {
   return <LiveText image={image} bubble={bubble} />
@@ -33,4 +35,12 @@ export const FlippingCardComponent = ({frontLabel, backLabel, frontButtonLabel, 
 
 export const CalendarHeatMapComponent = ({startDate = '', endDate = '', values = []}) => {
   return <CalendarHeatMap startDate={startDate} endDate={endDate} values={values} />
+}
+
+export const ImageLoaderComponent = ({image = '', title = '', description = '', overlayPosition = '', enableOverlay = false}) => {
+  return <ImageLoader image={image} title={title} description={description} overlayPosition={overlayPosition} enableOverlay={enableOverlay} />
+}
+
+export const SweetAlertComponent = ({label, title, description, onClose, onOk}) => {
+  return <SweetAlert label={label} title={title} description={description} onClose={onClose} onOk={onOk} />
 }
