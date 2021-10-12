@@ -8,13 +8,15 @@ import CalendarHeatMapComponent from './components/CalendarHeatMapComponent'
 import FlippingCardComponent from './components/FlippingCardComponent'
 import ImageLoaderComponent from './components/ImageLoaderComponent'
 import SweetAlertComponent from './components/SweetAlertComponent'
+import DatePickerComponent from './components/DatePickerComponent'
+import DateDropDownComponent from './components/DateDropDownComponent'
 import './index.css'
 
 class App extends Component {
     constructor (props) {
     	super(props)
     	this.state = {
-            activeIndex: 8,
+            activeIndex: 10,
             navbar: [
                 {title: 'Live Text'},
                 {title: 'Moveable List'},
@@ -25,6 +27,8 @@ class App extends Component {
                 {title: 'Flipping Card'},
                 {title: 'Image Loader'},
                 {title: 'Sweet Alert'},
+                {title: 'Date Picker'},
+                {title: 'Date Drop Down'},
             ]
         }
     }
@@ -58,6 +62,8 @@ class App extends Component {
                     {activeIndex === 6 && ( <FlippingCardComponent /> )}
                     {activeIndex === 7 && ( <ImageLoaderComponent /> )}
                     {activeIndex === 8 && ( <SweetAlertComponent /> )}
+                    {activeIndex === 9 && ( <DatePickerComponent /> )}
+                    {activeIndex === 10 && ( <DateDropDownComponent /> )}
                 </div>
             </div>
         )

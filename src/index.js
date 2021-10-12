@@ -8,6 +8,8 @@ import FlippingCard from './components/FlippingCard'
 import CalendarHeatMap from './components/CalendarHeatMap'
 import ImageLoader from './components/ImageLoader'
 import SweetAlert from './components/SweetAlert'
+import DatePicker from './components/DatePicker'
+import DateDropDown from './components/DateDropDown'
 
 export const LiveTextComponent = ({ image = '', bubble = [] }) => {
   return <LiveText image={image} bubble={bubble} />
@@ -43,4 +45,12 @@ export const ImageLoaderComponent = ({image = '', title = '', description = '', 
 
 export const SweetAlertComponent = ({type, label, title, description, onClose, onOk}) => {
   return <SweetAlert type={type} label={label} title={title} description={description} onClose={onClose} onOk={onOk} />
+}
+
+export const DatePickerComponent = ({onChange, formatFirstDate = '', formatEndDate = '', direction, months}) => {
+  return <DatePicker onChange={onChange} formatFirstDate={formatFirstDate} formatEndDate={formatEndDate} direction={direction} months={months} />
+}
+
+export const DateDropDownComponent = ({onChange, formatDate = ''}) => {
+  return <DateDropDown onChange={onChange} formatDate={formatDate} />
 }
