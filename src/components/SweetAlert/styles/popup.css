@@ -1,0 +1,7 @@
+.app_popup_content {
+    position: relative;
+    margin: auto;
+    width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}

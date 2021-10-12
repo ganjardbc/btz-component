@@ -41,6 +41,6 @@ export const ImageLoaderComponent = ({image = '', title = '', description = '', 
   return <ImageLoader image={image} title={title} description={description} overlayPosition={overlayPosition} enableOverlay={enableOverlay} />
 }
 
-export const SweetAlertComponent = ({label, title, description, onClose, onOk}) => {
-  return <SweetAlert label={label} title={title} description={description} onClose={onClose} onOk={onOk} />
+export const SweetAlertComponent = ({type, label, title, description, onClose, onOk}) => {
+  return <SweetAlert type={type} label={label} title={title} description={description} onClose={onClose} onOk={onOk} />
 }
